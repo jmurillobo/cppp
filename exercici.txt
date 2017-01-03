@@ -1,0 +1,20 @@
+﻿Noneok https://www.icann.org/epp#okw.icann.org/epp#okicann.org/epp#ok 
+
+
+1- Partiendo de los ejemplos suministrados en la parte 3 sobre ataques en el segmento de red local, realizar las pruebas de envenenamiento y MITM en un entorno de red local controlado por el estudiante, por ejemplo, en su red domestica.
+
+A partir de aquí, comienza el desarrollo una herramienta en Python para automatizar actividades de pentesting.
+En la última semana del curso, el alumno podrá elegir entre presentar un examen o desarrollar la herramienta en cuestión para finalizar el curso, con lo cual, el desarrollo de está practica es opcional y en el caso de que el estudiante decida desarrollarla, puede hacerla durante las próximas semanas.
+
+2- Crear una herramienta que permita ejecutar las siguientes tareas:
+    1. Dada una dirección IP o un nombre de dominio, encontrar información relacionada con el propietario de dicho dominio y los registros DNS correspondientes.
+    2. Ejecutar un proceso de geolocalización para encontrar las coordenadas (latitud y longitud) del objetivo en cuestión.
+    3. Ejecutar un escaneo con Nmap contra el objetivo y complementar la información obtenida con Shodan.
+        - En el caso de encontrar puertos que frecuentemente se relacionan con servidores web (80, 8080, 443, 10000) realizar una petición HTTP utilizando el método OPTIONS para determinar si efectivamente, el objetivo es un servidor web y extraer los métodos HTTP soportados.
+            - Intentar ejecutar un proceso de scraping contra el servidor web encontrado. Almacenar los documentos PDF e imágenes encontradas.
+            - Paralelamente crear un proceso que se encargue de recoger los documentos e imágenes del directorio donde se almacenan los documentos y posteriormente extraer los metadatos de dichos documentos.
+        - En el caso de encontrar puertos que frecuentemente se relacionan con servidores SSH (22) realizar una conexión y obtener el banner devuelto por el servidor para determinar si realmente se trata de un servidor SSH.
+            - Intentar ejecutar un proceso de fuerza bruta utilizando usuarios y contraseñas comunes. 
+HINT: Utilizar el proyecto FuzzDB: https://code.google.com/p/fuzzdb/ 
+            - Almacenar en un fichero de texto las credenciales de acceso en el 		caso de que el proceso sea exitoso.
+
